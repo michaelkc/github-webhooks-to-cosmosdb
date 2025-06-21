@@ -1,0 +1,18 @@
+meta {
+  name: GitHubWebhook
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:7043/api/GitHubWebhook
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "id": "foo1",
+    "message" : "bar"
+  }
+}
